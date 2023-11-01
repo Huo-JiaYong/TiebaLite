@@ -1,6 +1,8 @@
 name: Build, Deploy
 
 on:
+  workflow_dispatch:
+    branches: [ "4.0-dev" ]
   push:
     branches: [ "master", "4.0-dev" ]
   pull_request:
